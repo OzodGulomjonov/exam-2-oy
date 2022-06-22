@@ -1,0 +1,33 @@
+.easy-to-use {
+    background-color: $color-white;
+    padding-top: 150px;
+}
+
+.easy-to-use__text-wrapper{
+    max-width: 480px;
+}
+
+.easy-to-use__heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-grey;
+    max-width: 475px;
+}
+
+.easy-to-use__text {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-grey;
+}
+
+.easy-to-use__btn {
+    
+}
