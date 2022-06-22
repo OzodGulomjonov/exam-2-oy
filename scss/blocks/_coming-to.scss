@@ -1,0 +1,218 @@
+.coming-to {
+    margin-top: 200px;
+}
+
+.coming-to__container {
+}
+
+.coming-to__list {
+}
+
+.coming-to__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    
+    &::before {
+        content: '';
+        background-image: url(../../img/cross-opa-2.svg);
+        display: block;
+        position: absolute;
+        bottom: 0;  
+        width: 734px;
+        height: 150px;
+        background-repeat: no-repeat;
+        top: 0;
+        left: -15%;
+    }
+    
+    &:nth-child(2n) {
+        
+        margin-top: 160px;
+        position: relative;
+        
+        .coming-to__text-wrapper {
+            order: -1;
+        }
+        
+        .coming-to__item-img {
+            width: 445px;
+            height: 445px;
+            box-shadow: 500px 0 0 0 #E5ECF4;
+            border-radius: 50%;     
+        }
+        
+    }
+}
+
+.coming-to__item {
+    position: relative;
+    
+    &:nth-child(2)::before {
+        content: '';
+        display: block;
+        background-image: url(../../img/cross-opa-2.svg);
+        position: absolute;
+        z-index: 10;
+        width: 734px;
+        margin: 0 auto;
+        height: 150px;
+        background-repeat: no-repeat;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        // transform: rotate(180deg);
+        margin-top: 60px;
+        margin-left: 300px;
+        display: flex;
+        width: 100%;
+    }
+}
+
+.coming-to__item-img {
+    width: 445px;
+    height: 445px;
+    box-shadow: -500px 0 0 0 #E5ECF4;
+    border-radius: 50%;     
+}
+
+.coming-to__text-wrapper {
+}
+
+.coming-to__item-heading {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $color-dark;
+    max-width: 445px;
+}
+
+.coming-to__item-text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $color-grey;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    max-width: 445px;
+}
+
+.button {
+    
+}
+
+.coming-to__item-button {
+    
+}
+
+@media only screen and (max-width:970px) {
+    
+    .coming-to__item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .coming-to__text-wrapper {
+        order: -1;
+    }
+    
+    .coming-to__item-img {
+        order: -2;
+    }
+    
+    .coming-to__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .coming-to__item-heading {
+        text-align: center;
+    }
+    
+    .coming-to__item-text {
+        text-align: center;
+    }
+    
+    .coming-to__item-button {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    
+    .coming-to__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .coming-to__item-heading {
+        text-align: center;
+    }
+    
+    .coming-to__item-text {
+        text-align: center;
+    }
+    
+    .coming-to__item-button {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-width:555px) {
+    
+    .coming-to__item-img {
+        width: 311px;
+        height: 311px;
+    }
+    
+    .coming-to__item-heading {
+        font-size: 32px;
+        line-height: 32px;
+        max-width: 311px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .coming-to__text {
+        max-width: 311px;
+        text-align: center;
+    }
+
+    .coming-to__item {
+
+        &::before {
+            display: none;
+        }
+
+        .coming-to__item-img {
+            width: 311px;
+            height: 311px;
+        }
+
+        &:nth-child(2)::before {
+            content: '';
+            display: none;
+        }
+
+        &:nth-child(2) {
+            .coming-to__item-img {
+                width: 311px;
+                height: 311px;
+            }
+        }
+    }
+}
