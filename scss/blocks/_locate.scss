@@ -26,7 +26,7 @@
             position: absolute;
             left: calc(50% - 780px);
             top: 12.5%;
-            z-index: -1;
+            z-index: 1;
         }
     }
     
@@ -46,6 +46,8 @@
             background-color: $color-yellow;
             border-radius: 50%;
             margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
         }
         &:nth-child(2)::before {
             content: '';
@@ -58,6 +60,8 @@
             background-color: $color-yellow;
             border-radius: 50%;
             margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
         }
         &:nth-child(3)::before {
             content: '';
@@ -70,6 +74,8 @@
             background-color: $color-yellow;
             border-radius: 50%;
             margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
         }
     }
     
@@ -131,9 +137,12 @@
 
         &::before {
             content: '';
+            display: block;
+            position: absolute;
             transform: rotate(-90deg);
-            left: -59.3%;
+            left: calc(50% - 810px);
             top: -100px;
+            z-index: 1;
         }
     }
 }

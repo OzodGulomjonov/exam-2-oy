@@ -94,13 +94,53 @@
                 <button class="easy-to-use__btn button">Learn More</button>
           </div>
 
-          <picture>
-          
-            <source type="image/avif" media="(max-width:1300px)" srcset="opacha.avif 1x , opacha2x.avif 2x">
-            <source type="image/webp" media="(max-width:1300px)" srcset="opacha.webp 1x , opacha2x.webp 2x">
+          <picture class="easy-to-use__pictures">
+            <source type="image/avif"
+                        media="(max-width: 400px)"
+                        srcset="./img/opacha.avif 1x, ./img/opacha2x.avif 2x">
 
-            <img class="easy-to-use__img" src="img/opacha.png" srcset="img/opacha.png 1x , img/opacha2x.png 2x" alt="opa" width="445" height="445">
+            <source type="image/avif"
+                        media="(max-width: 800px)"
+                        srcset="./img/opacha.avif 1x, ./img/opacha2x.avif 2x">
+
+            <source type="image/avif"
+                        media="(max-width: 1200px)"
+                        srcset="./img/opacha.avif 1x, ./img/opacha2x.avif 2x">
+
+
+
+                        <source type="image/webp"
+                        media="(max-width: 400px)"
+                        srcset="./img/opacha.webp 1x, ./img/opacha2x.webp 2x">
+
+                        <source type="image/webp"
+                        media="(max-width: 800px)"
+                        srcset="./img/opacha.webp 1x, ./img/opacha2x.webp 2x">
+
+                        <source type="image/webp"
+
+
+                        media="(max-width: 1200px)"
+                        srcset="./img/opacha.webp 1x, ./img/opacha2x.webp 2x">
+                          
+                          <img class="easy-to-use__picture" src="img/opacha.png" srcset="img/opacha.png 1x , img/opacha2x.png 2x" alt="rasm">
           </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="coming-to">
+      <div class="container">
+        <div class="coming-to__container">
+          <ul class="coming-to__list">
+            <li class="coming-to__item">
+              <img class="coming-to__item-img" src="img/city.png" srcset="img/city.png 1x , img/city2x.png 2x" alt="city" width="445" height="445">   
+              <div class="coming-to__text-wrapper">
+                <h3 class="coming-to__item-heading">Coming to a city near you</h2>
+                <p class=""></p>
+              </div>
+            </li>
+          </ul> 
         </div>
       </div>
     </section>
